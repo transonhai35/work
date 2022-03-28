@@ -3,18 +3,10 @@
     --extra-color: #FCD233;
     --extra-content-color: #696969;
     --white-color: #fff;
+    --black-color: #000;
     
     --header-height: 82px;
 }
-
-
-
-
-
-
-
-
-
 
 *{
     box-sizing: inherit;    
@@ -28,3 +20,36 @@ html{
     box-sizing: border-box;
 }
 
+.content__padding {
+    display: block;
+    content: "";
+    height: 90px;
+}
+
+.content__title {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    line-height: 3.6rem;
+    
+}
+
+.content__title-2 {
+    color: var(--extra-color); 
+    padding-left: 10px;
+}
+
+.content__paragraph {
+    text-align: center;
+    color: var(--extra-content-color);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 440;
+}
+
+.font-bord {
+    font-weight: bolder;
+}
