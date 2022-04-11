@@ -21,13 +21,65 @@
 
 <body>
     <header class="header">
-        <div class="grid wide nav">
+        <div class="grid wide nav on-mobile">
             <div class="header__logo">
                 <a href="" class="header__logo-link">
                     Favison
                 </a>
             </div>
-            <ul class="nav-list">
+            <div class="header__menu hide-on-pc">
+
+                <label for="header__menu-btn-checkbox">
+                    <i class="fa-solid fa-bars menu-list-btn"></i>
+                </label>
+                <input type="checkbox" hidden class="menu-checkbox" id="header__menu-btn-checkbox">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Price</a>
+                    </li>
+                    <li class="nav-item submenu">
+                        <label for="submenu-checkbox-1" class="nav-link">
+                            Pages
+                        </label>
+                        <input type="checkbox" hidden class="submenu-checkbox" id="submenu-checkbox-1">
+                        <ul class="submenu-down">
+                            <li class="submenu-item">
+                                <a href="" class="submenu-link">Features</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="" class="submenu-link">Price</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="" class="submenu-link">Element </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item submenu">
+                        <label for="submenu-checkbox-2" class="nav-link">
+                            Blog
+                        </label>
+                        <input type="checkbox" hidden class="submenu-checkbox" id="submenu-checkbox-2">
+                        <ul class="submenu-down">
+                            <li class="submenu-item">
+                                <a href="" class="submenu-link">Blog</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="" class="submenu-link">Blog Details</a>
+                            </li>
+                        </ul> 
+                    </li>
+                    <li class="nav-item">
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+                </ul>
+            </div>
+            <ul class="nav-list hide-on-tablet hide-on-mobile">
                 <li class="nav-item">
                     <a href="" class="nav-link">Home</a>
                 </li>
@@ -66,7 +118,7 @@
                     <a href="" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <ul class="right-btn">
+            <ul class="right-btn hide-on-mob-tab">
                 <li class="shop-icon">
                     <a href="">
                         <i class="fas fa-cart-shopping cart-btn"></i>
@@ -76,32 +128,34 @@
                 <li class="sign-up">
                     <a href="" class="sign-up-btn">Sign Up</a>
                 </li>
-            </ul>
+            </ul> 
         </div>            
 
     </header>
     
     <div class="body">
-        <div class="banner-area">
+        <div class="banner-area on-mobile">
             <div class="overlay"></div>
-            <div class="grid wide row">
-                <div class="col l-6"></div>
-                <div class="col l-6 banner-content">
-                    <h3 class="title-white">Build a better business & faster</h3>
-                    <p class="sub-title-white">Subdue creature does face signs evening good sixth foreign gaered one. Fruit. Third every fruitful multiply subdue creature doesn't face signs evening good sixth tyou're.</p>
-                    <a href="" class="banner-btn"> 
-                        BEGIN FREE TRIAL
-                        <i class="fa-solid fa-arrow-right arrow-right"></i>
-                    </a>
+            <div class="grid wide row ">
+                <div class="on-mob-tab">
+                    <div class="col l-6 hide-on-mob-tab"></div>
+                    <div class="col l-6 m-10 c-10 banner-content">
+                        <h3 class="title-white">Build a better business & faster</h3>
+                        <p class="sub-title-white">Subdue creature does face signs evening good sixth foreign gaered one. Fruit. Third every fruitful multiply subdue creature doesn't face signs evening good sixth tyou're.</p>
+                        <a href="" class="banner-btn"> 
+                            BEGIN FREE TRIAL
+                            <i class="fa-solid fa-arrow-right arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="space"></div>
 
-        <div class="grid wide ">
+        <div class="grid wide on-mobile">
             <div class="row service-area">
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12">
                     <div class="single-column">
                         <div class="column-icon-one">
                             <i class="far fa-pen-to-square"></i>
@@ -113,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12">
                     <div class="single-column" style="margin-top: 50px;">
                         <div class="column-icon-two">
                             <i class="far fa-image"></i>
@@ -125,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-6 c-12">
                     <div class="single-column">
                         <div class="column-icon-three">
                             <i class="ti-headphone-alt"></i>
@@ -148,7 +202,7 @@
                     <p class="sub-title-black" style="font-weight: 400;">And appear great open bearing evening dominion vodi</p>
                     <p class="sub-title-black">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater male Shall There faced earth behold She star</p>
                 <div class="row row-about">
-                    <div class="col l-6">
+                    <div class="col l-6 m-6">
                         <div class="single-column">
                             <div class="column-icon-one">
                                 <i class="ti-thought"></i>
@@ -159,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-6">
+                    <div class="col l-6 m-6">
                         <div class="single-column">
                             <div class="column-icon-two">
                                 <i class="ti-truck"></i>
@@ -172,7 +226,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 hide-on-mob-tab">
                     <img src="https://preview.colorlib.com/theme/favison/img/banner/xabout1.png.pagespeed.ic.Pkl38mc1MS.webp" alt="" class="about-img">
                 </div>
             </div>
@@ -180,17 +234,15 @@
     
         <div class="space"></div>
 
-        <div class="feature-area">
+        <div class="feature-area on-mobile">
             <div class="grid wide">
                 <div class="row">
-                    <div class="col l-6">
+                    <div class="col l-6 hide-on-mob-tab">
                         <img src="https://preview.colorlib.com/theme/favison/img/banner/xabout2.png.pagespeed.ic.qhEGGSdjp5.webp" alt="" class="feature-area__img">
                     </div>
                     <div class="col l-6">
-                        <h3 class="title-white">
-                            Easy to Use
-                            <br>
-                            Mobile Application
+                        <h3 class="title-white on-mobile">
+                            Easy to Use Mobile Application
                         </h3>
                         <p class="sub-title-white">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater male Shall There faced earth behold She star</p>
                         <ul class="feature-list">
@@ -218,15 +270,16 @@
                 </div>
         </div>
 
-        <div class="statics-area">
+        <div class="statics-area on-mobile">
             <div class="grid wide">
-                <div class="row">
-                    <div class="col l-5">
+                <div class="row on-mob-tab">
+                    <div class="col l-5 m-8">
                         <img src="https://preview.colorlib.com/theme/favison/img/banner/xabout3.png.pagespeed.ic.O97uqntOrQ.webp" alt="" class="img-box">
                     </div>
                     <div class="col l-1"></div>
                     <div class="col l-6">
-                        <h3 class="title-black">Form Female From
+                        <h3 class="title-black on-mobile">
+                            Form Female From
                             Cattle Evening.</h3>
                         <p class="sub-title-black" style="font-weight: 400;">And appear great open bearing evening dominion vodi</p>
                         <p class="sub-title-black">There earth face earth behold. She'd stars made void two given do and also. Our own grass days. Greater male Shall There faced earth behold She star</p>
@@ -249,7 +302,7 @@
             </div>
         </div>
 
-        <div class="pricing-area">
+        <div class="pricing-area on-mobile">
             <div class="grid wide">
                 <div class="area-heading">
                     <h3 class="title-black" style="margin-bottom: 20px;">Our Pricing Plan</h3>
@@ -260,88 +313,97 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col l-3 column-background" style="padding: 40px 30px;">
-                        <div class="column-icon-two">
-                            <i class="ti-home"></i>
-                        </div>
-                        <div class="column__content">
-                            <h5 class="pricing-title">Standard</h5>
-                            <h4 class="price">
-                                $25/
-                                <span>month</span>
-                            </h4>
-                            <ul class="pricing-list">
-                                <li class="pricing-item">2GB Bandwidth</li>
-                                <li class="pricing-item">Two Account</li>
-                                <li class="pricing-item">15GB Storage</li>
-                                <li class="pricing-item">Sale After Service</li>
-                                <li class="pricing-item">3 Host Domain</li>
-                                <li class="pricing-item">24/7 Support</li>
-                            </ul>
-                            <a href="" class="column__content-link">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col l-3 column-background" style="padding: 40px 30px;">
-                        <div class="column-icon-three">
-                            <i class="ti-bag"></i>
-                        </div>
-                        <div class="column__content">
-                            <h5 class="pricing-title">Standard</h5>
-                            <h4 class="price">
-                                $35/
-                                <span>month</span>
-                            </h4>
-                            <ul class="pricing-list">
-                                <li class="pricing-item">2GB Bandwidth</li>
-                                <li class="pricing-item">Two Account</li>
-                                <li class="pricing-item">15GB Storage</li>
-                                <li class="pricing-item">Sale After Service</li>
-                                <li class="pricing-item">3 Host Domain</li>
-                                <li class="pricing-item">24/7 Support</li>
-                            </ul>
-                            <a href="" class="column__content-link">Purchase Now</a>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="column-background">
+                            <div class="column-icon-two">
+                                <i class="ti-home"></i>
+                            </div>
+                            <div class="column__content">
+                                <h5 class="pricing-title">Standard</h5>
+                                <h4 class="price">
+                                    $25/
+                                    <span>month</span>
+                                </h4>
+                                <ul class="pricing-list">
+                                    <li class="pricing-item">2GB Bandwidth</li>
+                                    <li class="pricing-item">Two Account</li>
+                                    <li class="pricing-item">15GB Storage</li>
+                                    <li class="pricing-item">Sale After Service</li>
+                                    <li class="pricing-item">3 Host Domain</li>
+                                    <li class="pricing-item">24/7 Support</li>
+                                </ul>
+                                <a href="" class="column__content-link">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col l-3 column-background" style="padding: 40px 30px;">
-                        <div class="column-icon-four">
-                            <i class="ti-car"></i>
-                        </div>
-                        <div class="column__content">
-                            <h5 class="pricing-title">Standard</h5>
-                            <h4 class="price">
-                                $25/
-                                <span>month</span>
-                            </h4>
-                            <ul class="pricing-list">
-                                <li class="pricing-item">2GB Bandwidth</li>
-                                <li class="pricing-item">Two Account</li>
-                                <li class="pricing-item">15GB Storage</li>
-                                <li class="pricing-item">Sale After Service</li>
-                                <li class="pricing-item">3 Host Domain</li>
-                                <li class="pricing-item">24/7 Support</li>
-                            </ul>
-                            <a href="" class="column__content-link">Purchase Now</a>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="column-background">
+                            <div class="column-icon-three">
+                                <i class="ti-bag"></i>
+                            </div>
+                            <div class="column__content">
+                                <h5 class="pricing-title">Standard</h5>
+                                <h4 class="price">
+                                    $35/
+                                    <span>month</span>
+                                </h4>
+                                <ul class="pricing-list">
+                                    <li class="pricing-item">2GB Bandwidth</li>
+                                    <li class="pricing-item">Two Account</li>
+                                    <li class="pricing-item">15GB Storage</li>
+                                    <li class="pricing-item">Sale After Service</li>
+                                    <li class="pricing-item">3 Host Domain</li>
+                                    <li class="pricing-item">24/7 Support</li>
+                                </ul>
+                                <a href="" class="column__content-link">Purchase Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col l-3 column-background" style="padding: 40px 30px;">
-                        <div class="column-icon-five">
-                            <i class="ti-gift"></i>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="column-background">
+                            <div class="column-icon-four">
+                                <i class="ti-car"></i>
+                            </div>
+                            <div class="column__content">
+                                <h5 class="pricing-title">Standard</h5>
+                                <h4 class="price">
+                                    $25/
+                                    <span>month</span>
+                                </h4>
+                                <ul class="pricing-list">
+                                    <li class="pricing-item">2GB Bandwidth</li>
+                                    <li class="pricing-item">Two Account</li>
+                                    <li class="pricing-item">15GB Storage</li>
+                                    <li class="pricing-item">Sale After Service</li>
+                                    <li class="pricing-item">3 Host Domain</li>
+                                    <li class="pricing-item">24/7 Support</li>
+                                </ul>
+                                <a href="" class="column__content-link">Purchase Now</a>
+                            </div>
                         </div>
-                        <div class="column__content">
-                            <h5 class="pricing-title">Standard</h5>
-                            <h4 class="price">
-                                $25/
-                                <span>month</span>
-                            </h4>
-                            <ul class="pricing-list">
-                                <li class="pricing-item">2GB Bandwidth</li>
-                                <li class="pricing-item">Two Account</li>
-                                <li class="pricing-item">15GB Storage</li>
-                                <li class="pricing-item">Sale After Service</li>
-                                <li class="pricing-item">3 Host Domain</li>
-                                <li class="pricing-item">24/7 Support</li>
-                            </ul>
-                            <a href="" class="column__content-link">Purchase Now</a>
+                        
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="column-background">
+                            <div class="column-icon-five">
+                                <i class="ti-gift"></i>
+                            </div>
+                            <div class="column__content">
+                                <h5 class="pricing-title">Standard</h5>
+                                <h4 class="price">
+                                    $25/
+                                    <span>month</span>
+                                </h4>
+                                <ul class="pricing-list">
+                                    <li class="pricing-item">2GB Bandwidth</li>
+                                    <li class="pricing-item">Two Account</li>
+                                    <li class="pricing-item">15GB Storage</li>
+                                    <li class="pricing-item">Sale After Service</li>
+                                    <li class="pricing-item">3 Host Domain</li>
+                                    <li class="pricing-item">24/7 Support</li>
+                                </ul>
+                                <a href="" class="column__content-link">Purchase Now</a>
+                            </div>
                         </div>
                     </div>  
                 </div>
@@ -350,7 +412,7 @@
 
         <div class="space"></div>
 
-        <div class="latest-blog-area">
+        <div class="latest-blog-area on-mobile">
             <div class="grid wide">
                 <div class="area-heading">
                     <h3 class="title-black">Read Our Latest News</h3>
@@ -361,7 +423,7 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col l-8 single-blog">
+                    <div class="col l-8 m-6 single-blog">
                         <div class="thumb">
                             <img src="https://preview.colorlib.com/theme/favison/img/blog/x1.png.pagespeed.ic.snMrZ9SqtF.webp" alt="" class="blog-img">
                         <div class="blog-content__overlay"></div>
@@ -386,7 +448,7 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col l-4 single-blog ">
+                    <div class="col l-4 m-6 single-blog ">
                         <div class="blog-right">
                             <div class="thumb">
                                 <img src="https://preview.colorlib.com/theme/favison/img/blog/x2.png.pagespeed.ic.tvG2kn7uj_.webp" alt="" class="blog-img">
@@ -414,7 +476,7 @@
                 </div>
                 <div class="min-space"></div>
                 <div class="row">
-                    <div class="col l-4 single-blog ">
+                    <div class="col l-4 m-6 single-blog ">
                         <div class="blog-right">
                             <div class="thumb">
                                 <img src="https://preview.colorlib.com/theme/favison/img/blog/x1.png.pagespeed.ic.snMrZ9SqtF.webp" alt="" class="blog-img">
@@ -439,7 +501,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col l-8 single-blog">
+                    <div class="col l-8 m-6 single-blog">
                         <div class="thumb">
                             <img src="https://preview.colorlib.com/theme/favison/img/blog/x4.png.pagespeed.ic.mkUILKjikz.webp" alt="" class="blog-img">
                         <div class="blog-content__overlay"></div>
@@ -471,22 +533,22 @@
 
         <div class="space"></div>
 
-        <div class="brands-area">
+        <div class="brands-area on-mobile">
             <div class="grid wide">
                 <div class="row img-list">
-                    <div class="col l-2">
+                    <div class="col l-2 c-4">
                         <img src="data:image/webp;base64,UklGRvwDAABXRUJQVlA4TPADAAAvd0AREC9ikG2k+p0/0N0/xODPGcO2bRwnT0q5u+9PNmlD5qS9AyMDMBEIcMDnIf4FLBTAjwuFxomEOAEmxMSBiRMiIQQAE4CW7h5EAYCJDSBeTAjRoLZtexssuZlh74eRUCsPWqNxl00wBr3//4960rR52eiHiP5PAN7lH07hg3zxG3575UN04Q3Jv65/WC6eBYBzb8lbAHDm3Ifi5u+/XQZw4d+f394DcO2nX29/IPD6OQBcuoVr1wHg5ZtTH4pLl0zntWv432tNJFnUt7hddNpg79yYaZOJ7F4B2hmeJLWRSdIB7J0BX7ite0hmf9TSqENglkYlmbHLFfZO+1jloLVBNySTXI2QZNynJFlUkykdUVUNY0dU6xu1NQ2JJKsJRreiWo9qJgCFJP1WADCZ2hHQ6dlWtKNZ0dxSknQA1IStgKandQCSmftQSVIOmTbSkGACgMW4XVMDAKLRHdn4QxaSlWQZ4owCWElm7JpPgBySSK4k6UagkFwAVJLphNXjKkk105BEMgOOJHXEpKoa+gJJVhwhJBkKSR2iJCvgzTSicysUkzqiqmpjMpJIpiETSQpm4zqiquqITt/RbCjJioVkHuLMhIVkRUfzJEw4JJHMUJJ0I1BJKhLJdPI8jqkkE4LxQxLJiEJyOUFRi5m6AjYdSSrE6JCFZHYkOfUENI8LWMxyzGRmoJKMQyaS1Rs/ZFJVDT2Tyceo8UAmmYd4klSSFUMiSWqPM/SHJLM9BJVkJrmeLGSjh5Q+P2RlezliGrGYdIRj/zxk2ZiP8A0HYDVz12SqOyCYrKqLWYbMG/4IFDMBqMZ3OcPpADUKACYP8Rs4RE1VTSSZ0YVklo6o1iOZyWSSdQhauS+q9XCFvWGHmtzRnpGNM4kk/ZDciH3tGZDSodjhDf0uR5IVVs00JDb0IECTKSrYg2p0VzBrYzLLEG2Ew/4j64wTACICiIg4AeAcAAcn4gCIg3OAQBwAeR/MBUAoJYuw1CQspUQGuBoBlLmUUoLkUkKMEApXQCnvizIjJqEIhQLEumDemqE5JmjaqA65vi+EgrkIdameMc5xrW5dN1TiGuoSsLFqKOUEPX7e/+ioWCehzj7GrCVulLIKZKm6oTkutevR8/7Hux487L+/B2VGTEKJq1CAGLWmrRlAUmjRFaF6SqkTu+4/7H+wa+BcS9FQShahSJ1ZSonR1dAXcinB5VJUKMsqfe+uiDg4ASCAg4iIc3BwDoCDQ1McAHGAAA6Cr6uvnG/dap2/+qG4+/TPG+bi32fMtScv73wg8OoJgKvfP+Mf350H8PsLfCjPngWAheRjADhz5oPRPkv+c9p8cP2P4Rd5lwA=" alt="" class="brands-img">
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 c-4">
                         <img src="data:image/webp;base64,UklGRjYFAABXRUJQVlA4TCoFAAAvc0ARED+loG0byfyOP6DrPgqDP2cK27ZtU5GUDrNp25A1aXUH5g0YgfNBM2zpjBPyKe0SHK7FMyho4XVTs4xdtxbwE+oBArAZyoSFCOFUDwF8nPJAfIAgwIMA1K5tUyQnz7qTinsqglvFvdB4GjaeivuLW+PeODRaSAGFFfr80OnZ6d0e7FtE/ycATdQApBCNv0mt4GKMCoh5kbRxBlBdTvkYrfMaAKJFdEUIASEWWddSgJSwNktFUECMPirvEPcmI6K97kp51CgK7eMdSQygaaxCjGW8mERDkgNUlxEPiVFnUWXxWDLWQFMDmjaZsswLlaJFmVQ3cSFYuCIvEXwRdYheAA3ARniJouBC1JI8XPcwQZKCCzGWSkRBYYoZXCE+SpCY+2hN0rpLFDngc7hoIRr1KuQqli7A5zqZbqChk4VJ2nlMr4MXl5TPYUzTtKV3EhUKQYc9a0c7AUQFJwHwecN0smX0MZXo/KlXP+sMulTJQgKcbRRc2hadljreOOVrABCMTdom36RCIPFc0qhxzfYfj62rRfvgbIpZk1wAylJMHQ8+9ePLD9cCwCYJ0IVtiFMIDhDU/OVy1F1KkRcxSTO0T+IC6p8GqBTF52iqLWNyTdCiyhIN1rmu54Z1FX3rawLyEl340g+9Lc98XptGN+756tUlX94w+bOprUvP/YLkT1vxd3vbs3eP4B/58HFcb3Gf7nGDCw5gy52YVKPHcKPFruW9p/sX7cOWW3FYjR3DzTuwe2mv61uyH1tvxZGJiSO4dSv2LelzfUt3Y/vNODY26whu3YJ9i/pP9y7fBXsTjo6qSdy5obP5H2OX4Mmdg59cd+erOH0I76xa8BH2XMEz24Y+mVj/Es5O4l299EPsvYznNo18OrrhBVx4AO8tX/4eDl7E8xtGPx3Z9Bwu78P7S1e8i8mzeHH9xCdDW5/BlT34aOHqd3DoTGf/x3tST1NB2qmQsaOCtP+IZuA/HzIKmQOe1J5AFkhvANILWeqSzABPak16COngySwy6JzMO3CR9LrCkTmALJDetFEFGQxYbVtKEoatSYFTTbVM0UwpY6tvqbQwbE2qypNk0mSCkNJCEjlpMjIDGZUjC5SkrsNoMkJIN6WSSZWkBpkgpCAnTUZmFYrMEShkhCPzFgHgSa1JAenhSEFREzTp4ToRERSkBRlhyQKe1JqUdlEbgzZFi65qbQoAiZ21ViEnk0HXETJMC0qSth6N1mYIkyk602itgpA0bfKpaVIakligDk1KlXJwZNkipLTLSZs1h/Tw7YQU5KTN2lnSItGz2rQzrNS1ILFyOgLJWFVpYVipK1Cy1ZFRSEE7ZIEMFvU4Ms+nxwT6jMxARiEFQBbIYFGFnEwOZMTf77+n/8BHL+G2PXjght5rw0uP467NOD134iLu3IPJ6/seGlxxBHdtwLm5sy5g7S4cWtV3bWDlUdy7Hudnzz6P9ffiyMqBa/2rDuH+tbgwa855bLgLR1YMPtS3ZhJ7DC5OzD2DjTs6m/MW7Dlc3Tzw9vgtT+PIfry8fF6Bu8/gkY2Db4/d/iSO7cUrSxe+iXtO4VEz/M7IHY/jxC68tnjxa9h1Eo/dMfLOsHkUp+/F6wuXvIK9x/DE7WNvD258BGfuRjF/2cvYf7Sz/8V7P/yuyeua8ggbHSeasenPZvGDRsz6kU0/3oSP2fjfr595jl3w26GZNv5HN+CVmYbnusEvc2bcwDfN+2snZv7K3xr3NJo42bSv+xuBt5v16zI0c/T7RmWYZg==" alt="" class="brands-img">
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 c-4">
                         <img src="data:image/webp;base64,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" alt="" class="brands-img">
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 hide-on-mob-tab">
                         <img src="data:image/webp;base64,UklGRsAEAABXRUJQVlA4TLMEAAAvdUAREDekoG0bxvzGH9DUHQqDP2cGk7aNLWm3KXLbtsk6dTDfwNSAN5GcgwALAUBwCIAQAIAdHNwwoAAFAMIhwgOARQACAYqgy4FAiDYviYcIxEIIIHZwI51b9AdjZpd+aTAAqG3bpmZqbtwlOEGHeoOm3qk91dR2Fx002NQb3AbX+4fzziRPsi/6KaL/ENxIUiRFdh0tRePC/QDTmI1/GjyD2XiJt998JotRe/Zq1N55Jou8996zV0l71upB0rY/W3Vr2524Pdz5TF36Mb6Pforas1NHgIWXyAO/jC764Nmo/yZ5dQWAT/jXwrdI8vFHz0KdXjHD7QCAmSfWY8aFuI1/HZ4PzASA+J5+YdQ+B4AlB/dgzDJrXVI/z+gSeovHD5NX+CWw5X9eX42xyoz9N/eM6sFnCqNvZ33IC1sf8csv7pM8hrHK7yQnLvGy8mlm5ZPf8AOTWIxRfmSUM2u0Wn+8jTl/XTv6zVt/k3c2YGzyFfn/hu9uTM5Ve309E1gIAG88Js/MwpjkUzJsAub1EJvdYvAbyW8xHtnzmA/fHcxx8QXy0VaMQ95/SH46oOUOkv/Mx/TnzbvkT4N6HiL5K6Y9mwN5aMagomtukpz2lxgbr5BnFwys+vlTLizHtGblH7du/btqaNcZ659mEV6Hp2BLqqJLpJYcUWq2pACaSCASqiKFHMhTKZtKFYmSzrMDUtApUvXAAIAfhm5PBSy7RSo9FgA4DB2eHUyIRF3yrSIu8U1oZJQcaFqGwQyEzrNIPbNAklmLSKIpKTWSBKYaMgwdngpQR7+2ikg0NgoYJUSLcgAUnt1MRNPeKmKjKVbDPF2UND1ReU4rZTpnLHqi8mzHdVP1+4USLcowAArPLkI06t1XsUo86aKe+QFQeHYgowcIWecWZtZxTiQ0jvSoyKbujdZTcRgpTiclQjLzpOuPzrMbn/U+iRF3rClJmkBWEwOg8OwkCNCFB9BxJqZkJCdI2v6oPVuWTwmgjcKkl3dcJQUh3gYm6kIv1J5tW6WLeCuVWnw62RgAhWdfXHQ2aamTQ9WjGgCFZ0/iHawn7pWDDIDCsyfxBUZNbCUKyi4Unv2JLxAFJnZgtNwUtCz+MpoihecARBc4BUXs4KMZUJAlAvECcgrPAZDkJO54DRM/P7hkLBCtE2kl9vEiIXny0Hr2wTC6067XazbymojHwqswbEsDQOHZl+SCSk1J0qlA2VZ5RKdnf1w0TmoykqIDmTQk6QSI0Hm+Hs7SvefOq3JyGcYgy07qenRu71JgH7XZgSS55IVYWLEo8kLEFraAzUVyFGIiHylhYS1sjgJStn2qqM0+mCdqpd2JcualqSfcRBAL7wrx1kmNIP4pbsIXQawTL0GcmwjOOCc+bbupzRMzxd6IQ+5GOCl8kxkHJ4310rgMTsQFJ1JbExojZWjESW3RG07t7491sG6iKUKZVU1jIya8FWcwYiKUmS29BF+IC7ZxtvS2P/uL/qB2dTyWVSisjyhDJo0r4HydB1dVdSOhrGsJZsJVdVP0p8AxtdGuFBhkQJ6bPAdyZJEFYAyQGSA3OUyGHJlBDmQwGZLsojbHgLWnlEYXx+IfQqsvUpdTawEA" alt="" class="brands-img">
                     </div>
-                    <div class="col l-2">
+                    <div class="col l-2 hide-on-mob-tab">
                         <img src="data:image/webp;base64,UklGRjoEAABXRUJQVlA4TC0EAAAvbEAREP+FoG3bmN/5E3q7jcLgz5mBtG1Db7urbduGgbdU3oF7A9bAmkt9GMpx7J1ZjNiljaIRKBoYADYwaz5pwxYADwAGAYQIIIRAOVDDei/MXGovALVr2xNJ0dPjM1hwGAnuBHeodcPdHV4cCnd3yS7uBCe4vzj01I+bnlQNVNY+RfR/AvCNBmfL4dFDr6b547vtqy6tX1vph4k3txYd/zKm5fXTbT3Qc93e4pZbdhzFzzNP5qXfqvJ9+OOXTXvzOy1c0D39lrXZLMaN2LStbPwP1DH9uq3usW7A7E2HS07WP5lJP5x78OnR+3cfnr99PhMePB3VPikNiurs613Qq7DOSnquPJoaG99snlpHTf48UD0rLRr+uGLDsznD62LzlodTf90+PCV++rir4e9/vSlLLNM2Ol5cb8GxpimBBktOtF8UzR2S1OotZvCv2Z1Iz7a7+2TaXnhekkyLrEG7sT/lxRKAhIRQgARkDSUAAQFAAAIQQiqlJCCEG6peXWpwMepakESrvtH+qs/3GyAuaRATS8tWsAITsJt5JGlogjYgDWhtmFlrWIqBUWdb99m7bFESR04Or99wZjMkoGroELtn8EjFhJGMkZxDMAe5QBqSQ4O4mZN7muGFTeLZe3z/9mYmAWZmYibSATMzgRgqykFmd+iCkEfGwpxoC+7fbB5v0pEzWHytKxLQICbWYWCIFZgwkjGS6TzOk2FmJ8WIn+nbBF1Gv24YR0bLgC7zMslJyxzkQshM0rJVrJQlZq4LPLneIe9h1D9Ov+hzybjoGpIUgIQElIAEJACoGRpQgAQElFJCAAKATGJpdLhJlG0Vp/Tp5/qHeFAi33rmt97YOR2xq4aioBD/Cme6Tli+YVPablg+oWsmibabXkRp/WJz2zjN9ldHaV69v5lT8DJK+5eBw+RslP7ZKbWMykY+zI7K0flD5MePnQHkmciXJg+YFPlzEjJ3PXI30z/yaf/VXllz2SuXn3vlefQP9pNXPt3zyr2TXjk5zyvzW2Y9km2FUx45BXSv9kZ1dwBbvbEVAEpveeJWaQ20fuyFx62Ru/y2B+6Uo/b6B1PvYH04D7uSaleHIbZaf+NLKn25sV4h2cKK7ulbUYj/kypASUglISCVEkICUioJKAkIQAFCQkBIQEB8Hb0nuRc5aG3JGLI6hKHQGrLnZ8w4b3UIMobC89h93ih7nmxgDZGB/ToaV7qjdsUIiGi3pSAwBppgZ+zePcNSACLS1sjz4YzAzgisJsXE5FI+yb3cbVPkHsewtBSEloMawlqRw+wmtjRyhpUjd4e5tHFps8C9tVtpI3cHaG2Jwt1Wh1bR7hrQ52F1CCKcnzHS6vNmpD1PNrCGSM9gh4GX3Lu7df3d+WcXKACQUkkJCAEIQEAqCQASkFACQkFASEBAOni2fJJ741oAAA==" alt="" class="brands-img">
                     </div>
                 </div>
@@ -500,10 +562,10 @@
     
     <!-- footer -->
     <footer class="footer">
-       <div class="footer-area">
+       <div class="footer-area on-mobile">
          <div class="grid wide">
             <div class="row footer-container">
-                <div class="col l-3 footer-about">
+                <div class="col l-3 m-6 c-12 footer-about">
                     <ul class="footer-list">
                         <li class="item-heading">
                             About Us
@@ -516,7 +578,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col l-3 footer-contact">
+                <div class="col l-3 m-6 c-12 footer-contact">
                     <ul class="footer-list">
                         <li class="item-heading">
                             Contact Info
@@ -532,7 +594,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col l-3 footer-link">
+                <div class="col l-3 m-6 c-12 footer-link">
                     <ul class="footer-list">
                         <li class="item-heading">
                             Important Link
@@ -554,7 +616,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col l-3 footer-newletter">
+                <div class="col l-3 m-6 c-12 footer-newletter">
                     <ul class="footer-list">
                         <li class="item-heading">
                             Newsletter
@@ -572,7 +634,7 @@
                 </div>
             </div>
             <div class="row footer-bottom">
-                <div class="col l-8">
+                <div class="col l-8 m-12 c-12 on-mob-tab">
                     <p class="footer-bottom__text">
                         Copyright ©2022 All rights reserved | This template is made with
                         <i class="fa fa-heart" aria-hidden="true"></i>
@@ -580,8 +642,8 @@
                         <a href="" class="footer-bottom__link">Colorlib</a>
                     </p>
                 </div>
-                <div class="col l-2"></div>
-                <div class="col l-2">
+                <div class="col l-2 hide-on-mob-tab"></div>
+                <div class="col l-2 m-12 c-12 on-mob-tab">
                     <div class="contact-icon">
                         <a class="footer-bottom__link" href="#">
                             <i class="ti-facebook"></i>

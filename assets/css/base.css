@@ -34,7 +34,7 @@ html{
 .title-white,
 .title-black {
     margin: 0 0 30px 0;
-    line-height: 5rem;
+    line-height: 5.4rem;
     font-size: 5rem;
     font-weight: 600;
     color: var(--white-color);
